@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sindhu</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.portfolio-wrapper{
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    background-color: #6e6b6b;
+    color: white;
+}
+
+header {
+    padding: 10px 20px;
+    
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: red;
+    font-size: 24px;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Optional: Add hover effect for links */
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+
+.intro {
+    display: grid;
+    grid-template-columns: 300px auto; /* One column for text, one for the image */
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+    margin: 20px 0;
+    border-bottom: 3px solid white;
+    gap: 101px; /* Space between text and image */
+}
+
+
+.intro-content {
+    font-size: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 100%;
+    width: 60%;
+    /* No need for margin-left, grid handles spacing */
+}
+
+.about, .services, .education, .work, .blog {
+    padding: 20px 29px;
+    border-bottom: 2px solid white;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 173px auto; /* Image in the first column, content in the second */
+    align-items: center; /* Vertically center the image and content */
+    grid-gap: 60px; /* Space between the image and content */
+    text-align: left; 
+}
+
+.profile-pi {
+    width: 173px;
+    height: 173px;
+    border-radius: 50%;
+    /* No need for inline-block or vertical-align */
+}
+
+.about-content {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Stack the heading, paragraph, and skill set */
+    white-space: normal; /* Allow text wrapping inside the content */
+}
+
+.about-me-content {
+    font-size: 13px;
+    margin-top: 4px;
+    text-align: start;
+   
+}
+
+.skill-set {
+    margin-top: 15px;
+    margin-left: 2px;
+}
+
+.Technical_Skills_history {
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns for 'Skills' and 'Experience' */
+    margin-top: 20px;
+}
+
+
+
+.education-history {
+    display: grid;
+    grid-template-columns: repeat(2, max-content); /* Two columns with widths based on content */
+    gap: 20px; /* Space between the items, matching the margin-right */
+    justify-content: center; /* Horizontally center the columns */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.education-term {
+    background-color: rgb(203, 181, 155);
+    color: #f7ebeb;
+    padding: 20px 71px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: start;
+    box-sizing: border-box; /* Ensure padding is included in the size */
+}
+
+.logo1 {
+    text-align: center;
+    color: red;
+    margin-bottom: 41px;
+}
+
+/* Container for the service boxes */
+.ser {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 10px; /* Space between service boxes */
+    margin: 50px 0;
+}
+
+/* Service box styling */
+.ser {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 10px; /* Space between service boxes */
+    margin: 50px 0;
+}
+
+/* Service box styling */
+.service-box {
+    border: 3px solid rgb(222, 68, 68);
+    border-radius: 20px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Service title container */
+.service-title {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+} 
+.service-title img{
+    height: 30px;
+    width: 30px;
+   margin-right: 20px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Keep each 'both_blogs' on its own row */
+    gap: 20px; /* Space between rows of blog groups */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Ensure each 'both_blogs' takes a full row */
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Both blogs container - two blog posts side by side */
+.both_blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 200px); /* Two columns for blog posts */
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Blog post styling */
+.blog-post {
+    display: grid;
+    grid-template-columns: 50px auto; /* Grid with two columns: 50px for the image and remaining space for text */
+    align-items: center; /* Vertically center the image and text */
+    background-color: rgb(245, 238, 230);
+    color: #6e6b6b;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    box-sizing: border-box;
+    gap: 10px; /* Space between the image and the text */
+}
+
+/* Blog post image */
+.blog-post img {
+    display: block;
+    width: 50px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Blog post text */
+.blog-post p {
+    text-align: left; /* Align text to the left of the container */
+    margin: 0; /* Remove default margin */
+}
+
+footer {
+    background-color:#6e6b6b;
+    padding: 20px;
+    
+}
+
+.social-media a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.social-media a:hover {
+    color: #ff7700;
+}
+
+.contact-information {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr; /* One column for centering */
+    justify-items: center; /* Center items horizontally within their grid cells */
+    gap: 20px; /* Space between each contact block */
+    margin-top: 20px; /* Optional: add margin to the top */
+}
+.contact-block {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: one for the image and one for the text */
+    align-items: center; /* Vertically center the items in the grid */
+    justify-content: center; /* Horizontally center the grid within the parent */
+    gap: 10px; /* Space between the image and text */
+}
+
+.contact-block img, .social-media-block img {
+    height: 20px;
+    width: 20px;
+    
+}
+.social-media {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Create responsive columns */
+    justify-items: center; /* Center items horizontally within their grid cells */
+    gap: 20px; /* Space between social media blocks */
+    margin-top: 39px; /* Space above the social media section */
+}
+
+.social-media-block {
+    text-align: center; /* Center the text and image within each block */
+}
+
+.social-media-block img {
+    height:30px; /* Adjust the size as needed */
+    width: 30px; /* Ensure images are the same size */
+   
+}
+
+.social-media-block a {
+    display: block; /* Ensures the link takes the full width */
+    color: white; /* Set the link color */
+    text-decoration: none; /* Remove underline from links */
+    margin-top: 5px; /* Space between image and text */
+}
+
+.social-media-block a:hover {
+    color: #ff7700; /* Change color on hover */
+}
+
+
+@media (max-width: 651px) {
+    .header-container {
+        grid-template-columns: 1fr; /* Stack the logo and navigation */
+        text-align: center; /* Center the navigation items */
+    }
+
+    nav ul {
+        grid-template-columns: 1fr; /* Stack navigation items */
+        grid-gap: 10px; /* Reduced space between items */
+    }
+
+    .intro {
+        grid-template-columns: 1fr; /* Single column layout for intro */
+        text-align: center; /* Center intro text */
+    }
+
+    .profile-pic {
+        width: 80%; /* Adjust profile picture size */
+        margin: auto auto;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Single column layout for about */
+        text-align: center; /* Center content */
+    }
+
+  .profile-pi {
+    width: 100px; /* Maintain aspect ratio */
+    height: 100px; /* Adjust as necessary */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure the image is treated as a block element */
+}
+
+
+    .services {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+    }
+
+    .service-box {
+        padding: 15px; /* Adjust padding for smaller boxes */
+    }
+
+    .education-history {
+        grid-template-columns: 1fr; /* Stack education items */
+        margin-top: 20px; /* Reduced top margin */
+    }
+
+    .blogs {
+        grid-template-columns: 1fr; /* Single column layout for blogs */
+    }
+
+    .both_blogs {
+        grid-template-columns: 1fr; /* Stack blog posts */
+    }
+
+    .blog-post {
+        width: 90%; /* Adjust blog post width */
+        margin: 0 auto; /* Center blog posts */
+    }
+
+    footer {
+        text-align: center; /* Center footer content */
+    }
+
+    .contact-information {
+        grid-template-columns: 1fr; /* Stack contact items */
+    }
+
+    .social-media {
+        grid-template-columns: repeat(4, 1fr); /* Ensure enough space for icons */
+        justify-items: center; /* Center social media icons */
+    }
+
+    .social-media-block {
+        margin-bottom: 10px; /* Space between social media blocks */
+    }
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .ser {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .ser {
+        grid-template-columns: 1fr; /* Stack all service boxes on smaller screens */
+    }
+
+    .service-box {
+        padding: 15px; /* Adjust padding for smaller boxes */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="portfolio-wrapper">
+
+    
+        <header>
+            <div class="header-container" id="myTopnav">
+                <h1 class="logo">Sindhu</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                       
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+
+        <section class="intro">
+            <div class="intro-text">
+                <h4>Front-End Developer</h4>
+                <p class="intro-content">Hi, I'm Venkata Sindhu from USA</p>
+            </div>
+            <img class="profile-pic" src="./assets/DSC_6256.jpeg" alt="Profile Picture">
+        </section>
+        
+
+        <section id="about" class="about">
+            <img class="profile-pi" src="./assets/Abotme.jpeg" alt="about">
+            <div class="about-content">
+                <h2 class="logo">About Me</h2>
+                <p class="about-me-content">I am a passionate frontend developer with a strong foundation in HTML, CSS, JavaScript, and React.js. During my internship at Divami Design Labs, I gained practical experience in transforming designs into responsive, user-centric web applications.</p>
+                <div class="skill-set">
+                    <div>
+                        <div class="Technical_Skills_history">
+                            <h3>Skills</h3>
+                            <h3>Experience</h3>
+                        </div>
+                        <ul>
+                            <li class="about-me-content">HTML</li>
+                            <li class="about-me-content">CSS</li>
+                            <li class="about-me-content">JavaScript</li>
+                            <li class="about-me-content">React.js</li>
+                            <li class="about-me-content">Java Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    <section id="services" class="services">
+        <h2 class="logo">My Services</h2>
+        <div class="ser">
+            <div class="service-box">
+                <div class="service-title">
+                    <img class="service-logo" src="./assets/settings.png" alt="service">
+                    <h4>Web Development</h4>
+                </div>
+                <p class="about-me-content">Creating responsive and user-friendly web designs.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-title">
+                    <img class="service-logo" src="./assets/settings.png" alt="service">
+                    <h4>UI/UX Design</h4>
+                </div>
+                
+                <p class="about-me-content">Transforming design ideas into functional user interfaces.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-title">
+                    <img class="service-logo" src="./assets/settings.png" alt="service">
+                    <h4>UX Development</h4>
+                </div>
+                
+                <p class="about-me-content">Building efficient and scalable frontend systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2 class="logo1">Education</h2>
+        <div class="education-history">
+            <div class="education-term">
+                <p>BTECH in CS</p>
+                <p class="about-me-content">Batch: 2019-2023</p>
+                <p class="about-me-content">CGPA: 8.87</p>
+            </div>
+            <div class="education-term">
+                <p>BTECH in CS</p>
+                <p class="about-me-content">Batch: 2019-2023</p>
+                <p class="about-me-content">CGPA: 8.87</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2 class="logo1">Blog</h2>
+        <div class="blogs">
+            <div class="both_blogs">
+                <div class="blog-post">
+                    <img class="service-logo" src="./assets/settings.png" alt="Blog">
+                    <p>Blog Post 1</p>
+                </div>
+                <div class="blog-post">
+                    <img class="service-logo" src="./assets/settings.png" alt="Blog">
+                    <p>Blog Post 2</p>
+                </div>
+            </div>
+            <div class="both_blogs">
+                <div class="blog-post">
+                    <img class="service-logo" src="./assets/settings.png" alt="Blog">
+                    <p>Blog Post 1</p>
+                </div>
+                <div class="blog-post">
+                    <img class="service-logo" src="./assets/settings.png" alt="Blog">
+                    <p>Blog Post 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer id="contact">
+        <h2 class="logo1">Contact</h2>
+      <div class="contact-information">
+        <div class="contact-block">
+            <img src="./assets/gmail.webp" alt="gmail">
+            <p>abcdefgh123@gmail.com</p>
+        </div>
+        
+        <div class="contact-block">
+            <img  src="./assets/call.png" alt="call">
+            <p>+1234567737374774758</p>
+        </div>
+    </div>
+        <div class="social-media">
+            <div class="social-media-block">
+                <img   src="./assets/instagram.avif" alt="Instagram">
+                <a class="social-media-name" href="#">Instagram</a>
+            </div>
+            
+            <div class="social-media-block">
+                <img  class="contact-logo" src="./assets/linkedin.jpg" alt="Instagram">
+                <a class="social-media-name" href="#">Linked In</a>
+            </div>
+            <div class="social-media-block">
+                <img  class="contact-logo" src="./assets/github.png" alt="Instagram">
+                <a class="social-media-name" href="#">GitHub</a>
+            </div>
+            <div class="social-media-block">
+                <img  class="contact-logo" src="./assets/whatsapp.png" alt="Instagram">
+                <a class="social-media-name" href="#">Whatsapp</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+</body>
+</html>

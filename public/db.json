@@ -1,0 +1,135 @@
+{
+    "places": [
+      {
+        "Destination": "Manali",
+        "image": "https://www.holidify.com/images/bgImages/MANALI.jpg",
+        "Hotels": [
+          {
+            "image": "https://www.holidify.com/images/cmsuploads/compressed/292276203_20210508201424.jpg",
+            "name": "Montana Blues Resort"
+          },
+          {
+            "image": "https://www.holidify.com/images/cmsuploads/compressed/110721592_20210122153657.jpg",
+            "name": "Larisa Resort"
+          }
+        ],
+        "Reviews_and_Ratings": "4.8/5",
+        "Weather": "-2 - 6°C",
+        "Attractions": [
+          {
+            "image": "https://www.holidify.com/images/cmsuploads/square/shutterstock_633164246_20190904103856_20190904103926.jpg",
+            "name": "Solang Valley"
+          },
+          {
+            "image": "https://www.holidify.com/images/cmsuploads/square/attr_1888_20190308172811.jpg",
+            "name": "Hadimba Devi Temple"
+          }
+        ]
+      },
+    {
+      "Destination": "Manali",
+      "image": "https://www.holidify.com/images/bgImages/MANALI.jpg",
+      "Hotels": [
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/292276203_20210508201424.jpg",
+          "name": "Montana Blues Resort"
+        },
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/110721592_20210122153657.jpg",
+          "name": "Larisa Resort"
+        }
+      ],
+      "Reviews_and_Ratings": "4.8/5",
+      "Weather": "-2 - 6°C",
+      "Attractions": [
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/square/shutterstock_633164246_20190904103856_20190904103926.jpg",
+          "name": "Solang Valley"
+        },
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/square/attr_1888_20190308172811.jpg",
+          "name": "Hadimba Devi Temple"
+        }
+      ]
+    },
+    {
+      "Destination": "Manali",
+      "image": "https://www.holidify.com/images/bgImages/MANALI.jpg",
+      "Hotels": [
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/292276203_20210508201424.jpg",
+          "name": "Montana Blues Resort"
+        },
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/110721592_20210122153657.jpg",
+          "name": "Larisa Resort"
+        }
+      ],
+      "Reviews_and_Ratings": "4.8/5",
+      "Weather": "-2 - 6°C",
+      "Attractions": [
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/square/shutterstock_633164246_20190904103856_20190904103926.jpg",
+          "name": "Solang Valley"
+        },
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/square/attr_1888_20190308172811.jpg",
+          "name": "Hadimba Devi Temple"
+        }
+      ]
+    },
+    {
+      "Destination": "Manali",
+      "image": "https://www.holidify.com/images/bgImages/MANALI.jpg",
+      "Hotels": [
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/292276203_20210508201424.jpg",
+          "name": "Montana Blues Resort"
+        },
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/110721592_20210122153657.jpg",
+          "name": "Larisa Resort"
+        }
+      ],
+      "Reviews_and_Ratings": "4.8/5",
+      "Weather": "-2 - 6°C",
+      "Attractions": [
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/square/shutterstock_633164246_20190904103856_20190904103926.jpg",
+          "name": "Solang Valley"
+        },
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/square/attr_1888_20190308172811.jpg",
+          "name": "Hadimba Devi Temple"
+        }
+      ]
+    },
+    {
+      "Destination": "Manali",
+      "image": "https://www.holidify.com/images/bgImages/MANALI.jpg",
+      "Hotels": [
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/292276203_20210508201424.jpg",
+          "name": "Montana Blues Resort"
+        },
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/110721592_20210122153657.jpg",
+          "name": "Larisa Resort"
+        }
+      ],
+      "Reviews_and_Ratings": "4.8/5",
+      "Weather": "-2 - 6°C",
+      "Attractions": [
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/square/shutterstock_633164246_20190904103856_20190904103926.jpg",
+          "name": "Solang Valley"
+        },
+        {
+          "image": "https://www.holidify.com/images/cmsuploads/square/attr_1888_20190308172811.jpg",
+          "name": "Hadimba Devi Temple"
+        }
+      ]
+    }
+  ]
+  }
+  
